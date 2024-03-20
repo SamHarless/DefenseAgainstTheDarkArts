@@ -24,16 +24,12 @@ main:
 	xorl %esp, (%esi)
 	nop
 	nop
-	push $90132
-	ret
 	/*rotunda virus signature*/
 	mov %ebp, %esp
 	push %eax
 	pop %eax
 	cmp -2(%ebp), %eax
 	
-	push $909
-	ret	
 	addl	%edx, %eax
 	leave
 	ret
