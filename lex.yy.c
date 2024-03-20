@@ -408,35 +408,35 @@ static const YY_CHAR yy_meta[17] =
         2,    2,    2,    2,    2,    2
     } ;
 
-static const flex_int16_t yy_base[71] =
+static const flex_int16_t yy_base[69] =
     {   0,
         0,   13,   55,   56,   56,    0,   43,   41,   38,   56,
         0,   36,    0,    0,   36,    0,    0,   41,    0,    0,
-       45,    0,    0,   39,    0,    0,   35,    0,    0,   39,
-        0,    0,   31,    0,   29,   35,   35,   34,   31,   34,
-       56,   21,   30,   20,   25,   56,   27,   28,   26,   21,
-       56,   56,   26,   27,   23,   21,   19,   18,   17,   16,
-       15,   14,   10,    8,    6,    5,    4,    3,    2,    1
+       45,    0,    0,   39,    0,    0,   35,    0,   42,   38,
+        0,   32,   29,    0,   27,   33,   33,   32,   29,   32,
+       56,   19,   28,   18,   23,   56,   25,   26,   24,   16,
+       56,   56,   26,   21,   19,   18,   17,   16,   15,   14,
+       10,    8,    6,    5,    4,    3,    2,    1
     } ;
 
-static const flex_int16_t yy_def[71] =
+static const flex_int16_t yy_def[69] =
     {   0,
        53,   53,   52,   52,   52,   54,   54,   54,   54,   52,
        55,   52,   56,   57,   52,   58,   59,   52,   60,   61,
-       52,   62,   63,   52,   64,   65,   52,   66,   67,   52,
-       68,   69,   52,   70,   52,   52,   52,   52,   52,   52,
+       52,   62,   63,   52,   64,   65,   52,   66,   52,   52,
+       67,   52,   52,   68,   52,   52,   52,   52,   52,   52,
        52,   52,   52,   52,   52,   52,   52,   52,   52,   52,
        52,    0,   52,   52,   52,   52,   52,   52,   52,   52,
-       52,   52,   52,   52,   52,   52,   52,   52,   52,   52
+       52,   52,   52,   52,   52,   52,   52,   52
     } ;
 
 static const flex_int16_t yy_nxt[73] =
     {   0,
-        4,    5,   37,   35,   34,   32,   31,   29,    7,   28,
-        8,   26,    9,    4,    5,   25,   23,   22,   20,   19,
-       17,    7,   16,    8,   14,    9,    6,    6,   10,   51,
-       50,   49,   48,   47,   46,   45,   44,   43,   42,   41,
-       40,   39,   38,   36,   33,   30,   27,   24,   21,   18,
+        4,    5,   37,   34,   31,   29,   28,   26,    7,   25,
+        8,   23,    9,    4,    5,   22,   20,   19,   17,   16,
+       14,    7,   10,    8,   51,    9,    6,    6,   50,   49,
+       48,   47,   46,   45,   44,   43,   42,   41,   40,   39,
+       38,   36,   35,   33,   32,   30,   27,   24,   21,   18,
        15,   13,   12,   11,   52,    3,   52,   52,   52,   52,
        52,   52,   52,   52,   52,   52,   52,   52,   52,   52,
        52,   52
@@ -444,11 +444,11 @@ static const flex_int16_t yy_nxt[73] =
 
 static const flex_int16_t yy_chk[73] =
     {   0,
-        1,    1,   70,   69,   68,   67,   66,   65,    1,   64,
-        1,   63,    1,    2,    2,   62,   61,   60,   59,   58,
-       57,    2,   56,    2,   55,    2,   53,   53,   54,   50,
-       49,   48,   47,   45,   44,   43,   42,   40,   39,   38,
-       37,   36,   35,   33,   30,   27,   24,   21,   18,   15,
+        1,    1,   68,   67,   66,   65,   64,   63,    1,   62,
+        1,   61,    1,    2,    2,   60,   59,   58,   57,   56,
+       55,    2,   54,    2,   50,    2,   53,   53,   49,   48,
+       47,   45,   44,   43,   42,   40,   39,   38,   37,   36,
+       35,   33,   32,   30,   29,   27,   24,   21,   18,   15,
        12,    9,    8,    7,    3,   52,   52,   52,   52,   52,
        52,   52,   52,   52,   52,   52,   52,   52,   52,   52,
        52,   52
@@ -468,8 +468,8 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "virus-patterns.l"
-#line 4 "virus-patterns.l"
+#line 1 "virus-patterns-V2.l"
+#line 4 "virus-patterns-V2.l"
 #include <stdio.h>
 int num_bytes=0;
 #line 476 "lex.yy.c"
@@ -690,7 +690,7 @@ YY_DECL
 		}
 
 	{
-#line 9 "virus-patterns.l"
+#line 9 "virus-patterns-V2.l"
 
 
 
@@ -753,32 +753,32 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 12 "virus-patterns.l"
-{ printf("WARNING! Trick Jump: byte number: 0x%x\n", num_bytes); printf("%s", yytext); printf("\n\n"); num_bytes+=6; }
+#line 12 "virus-patterns-V2.l"
+{ printf("WARNING! Tricky Jump: byte number: 0x%x\n", num_bytes); printf("%s", yytext); printf("\n\n"); num_bytes+=6; }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 15 "virus-patterns.l"
+#line 15 "virus-patterns-V2.l"
 { printf("WARNING! Cavalier Virus: byte number: 0x%x\n", num_bytes); printf("%s", yytext); printf("\n\n"); num_bytes+=9; }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 17 "virus-patterns.l"
+#line 17 "virus-patterns-V2.l"
 { printf("WARNING! Rotunda Virus: byte number: 0x%x\n", num_bytes); printf("%s", yytext); printf("\n\n"); num_bytes+=7; }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 20 "virus-patterns.l"
+#line 20 "virus-patterns-V2.l"
 { num_bytes+=1; }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 22 "virus-patterns.l"
+#line 22 "virus-patterns-V2.l"
 { printf("error, matched the period"); }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 24 "virus-patterns.l"
+#line 24 "virus-patterns-V2.l"
 ECHO;
 	YY_BREAK
 #line 785 "lex.yy.c"
@@ -1786,7 +1786,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 24 "virus-patterns.l"
+#line 24 "virus-patterns-V2.l"
 
 
 
