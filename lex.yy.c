@@ -774,7 +774,7 @@ YY_RULE_SETUP
 case 5:
 YY_RULE_SETUP
 #line 22 "virus-patterns-V2.l"
-{ printf("error, matched the period"); }
+{  }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP

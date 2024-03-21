@@ -36,6 +36,8 @@ main:
 	ret
 	
 	push $451
+	ret
+	push $5
 	ret	
 	addl	%edx, %eax
 	leave

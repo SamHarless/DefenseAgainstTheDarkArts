@@ -19,7 +19,7 @@ bc[a-f0-9]{8}31363126   { printf("WARNING! Cavalier Virus: byte number: 0x%x\n",
 
 [a-f0-9]{2}		{ num_bytes+=1; }
 
-. 			{ printf("error, matched the period"); }
+. 			{  }
 
 %%
 
